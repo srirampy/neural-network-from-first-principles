@@ -27,3 +27,30 @@ We implement:
 This work demonstrates how neural networks learn non-linear functions by updating parameters via gradients computed through backpropagation.
 
 ---
+
+---
+
+# 🔍 Computational Graph Tracing & Visualization
+
+Understanding backpropagation becomes significantly easier when the computational graph is visualized explicitly.
+
+This project includes a visualization pipeline that renders the dynamically constructed computation graph using **Graphviz**.  
+The visualization displays:
+
+- Node values (forward pass outputs)
+- Gradients (computed during backward pass)
+- Mathematical operations
+- Dependency connections between nodes
+
+---
+
+## 📓 Visualization Notebook
+
+All visualization code is included inside: micrograd_mlp.ipynb
+<p align="center">
+  <img src="images/network.svg" alt="Computational Graph Visualization" width="800"/>
+</p>
+
+<p align="center">
+<b>Figure:</b> Dynamically constructed computational graph showing forward values and backward gradients produced by the autograd engine.
+</p>
